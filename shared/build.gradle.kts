@@ -62,7 +62,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.plcoding.translator_kmm"
+    namespace = "com.example.translationapp"
     compileSdk = 34
     defaultConfig {
         minSdk = 24
@@ -78,7 +78,7 @@ android {
 sqldelight {
     databases {
         create("TranslateDatabase") {
-            packageName.set("com.plcoding.translator_kmm.database")
+            packageName.set("com.example.translationapp.database")
         }
     }
 }

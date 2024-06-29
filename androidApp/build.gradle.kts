@@ -7,16 +7,16 @@ plugins {
 }
 
 android {
-    namespace = "com.plcoding.translator_kmm.android"
+    namespace = "com.example.translationapp.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.plcoding.translator_kmm.android"
+        applicationId = "com.example.translationapp.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "com.plcoding.translator_kmm.TestHiltRunner"
+        testInstrumentationRunner = "com.example.translationapp.TestHiltRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
