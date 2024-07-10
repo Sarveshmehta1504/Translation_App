@@ -8,4 +8,10 @@
     <string name="copy">Copy</string>
     <string name="play_loud">Play loud\n</string>
     <string name="copied_to_clipboard">Text copied to clipboard</string>
+    <string name="history">History</string>
+    <string name="error_service_unavailable">Oops, and error happend .Please try again later</string>
+    <string name="client_error">"Oops,, an error happend. Please contact the support team "</string>
+    <string name="server_error">An error happend. Please try again later.</string>
+    <string name="unknown_error">Oops, an error happend</string>
+    <string name="record_audio">Record Audio</string>
 </resources>

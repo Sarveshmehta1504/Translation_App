@@ -118,7 +118,7 @@ private fun TranslatedTextField(
         Spacer(modifier = Modifier.height(16.dp))
         Row (
             modifier = Modifier.align(Alignment.End)
-        ){
+        ) {
             IconButton(
                 onClick = { onCopyClick(fromText) }
             ) {
@@ -137,6 +137,7 @@ private fun TranslatedTextField(
                     tint = Color(LightBlue)
                 )
             }
+        }
             Spacer(Modifier.height(16.dp))
             Divider()
             Spacer(Modifier.height(16.dp))
@@ -148,7 +149,7 @@ private fun TranslatedTextField(
             )
             Spacer(modifier = Modifier.height(16.dp))
             Row (
-                modifier = Modifier,
+                modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.Bottom,
                 horizontalArrangement = Arrangement.End
             ) {
@@ -171,9 +172,7 @@ private fun TranslatedTextField(
                     )
                 }
             }
-        }
     }
-
 }
 
 @Composable
