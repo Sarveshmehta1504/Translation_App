@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.speech.SpeechRecognizer.ERROR_CLIENT
 import androidx.compose.foundation.isSystemInDarkTheme
 import com.example.translationapp.android.R
 import com.example.translationapp.core.domain.util.CommonStateFlow
@@ -58,7 +59,7 @@ class AndroidVoiceToTextParser(
         recognizer.stopListening()
     }
 
-    override fun close() {
+    override fun cancel() {
         recognizer.cancel()
     }
 
@@ -86,6 +87,9 @@ class AndroidVoiceToTextParser(
     }
 
     override fun onError(code: Int) {
+        if(code == ERROR_CLIENT){
+            return
+        }
         _state.update { it.copy(error = "Error: $code") }
     }
 
