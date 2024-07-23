@@ -5,7 +5,7 @@ import com.example.translationapp.R
 import com.example.translationapp.core.domain.language.Language
 import java.util.Locale
 
-actual class UiLanguage (
+actual data class UiLanguage (
     @DrawableRes val drawableRes: Int,
     actual val language: Language
 ){
